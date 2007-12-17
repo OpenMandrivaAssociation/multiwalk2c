@@ -9,7 +9,6 @@ Source0:	http://it.marton.pl/wegorz/%{name}-%{version}.tar.gz
 Patch0:		multiwalk2c-0.1.1-compile_fix.diff
 BuildRequires:	net-snmp-devel
 BuildRequires:	automake1.7
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}buildroot
 
 %description
 multiwalk2c is a multi-threaded SNMP scanner. It is a modified version of
