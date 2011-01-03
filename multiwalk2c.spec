@@ -1,14 +1,14 @@
 Summary:	Multi-threaded SNMP scanner (like a snmpbulkwalk)
 Name:		multiwalk2c
 Version:	0.2.1
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL
 Group:		System/Servers
 URL:		http://wegorz.marton.pl/
 Source0:	http://wegorz.marton.pl/%{name}-%{version}.tar.gz
 Patch0:		multiwalk2c-0.1.1-compile_fix.diff
 BuildRequires:	net-snmp-devel
-BuildRequires:	automake1.7
+BuildRequires:	automake
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}buildroot
 
 %description
@@ -25,7 +25,7 @@ one thread.
 %build
 export WANT_AUTOCONF_2_5=1
 rm -f configure
-libtoolize --copy --force; aclocal-1.7; autoconf; automake-1.7 --copy --add-missing --foreign
+libtoolize --copy --force; aclocal; autoconf; automake --copy --add-missing --foreign
 
 %configure2_5x
 
