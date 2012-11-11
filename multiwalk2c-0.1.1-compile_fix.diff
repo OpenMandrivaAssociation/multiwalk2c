@@ -1,0 +1,9 @@
+--- Makefile.am	2005-07-17 14:59:14.000000000 +0200
++++ Makefile.am.oden	2006-03-19 16:14:41.000000000 +0100
+@@ -1,5 +1,5 @@
+ AUTOMAKE_OPTIONS	=	foreign
+-INCLUDES 		= 	-Wall -Werror
++INCLUDES 		= 	-Wall
+ 
+ # ==========
+ bin_PROGRAMS		= 	multiwalk2c
