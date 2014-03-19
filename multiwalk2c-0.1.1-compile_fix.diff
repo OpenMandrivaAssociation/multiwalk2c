@@ -1,5 +1,6 @@
---- Makefile.am	2005-07-17 14:59:14.000000000 +0200
-+++ Makefile.am.oden	2006-03-19 16:14:41.000000000 +0100
+diff -urN multiwalk2c-0.2.1/Makefile.am multiwalk2c-0.2.1-patched/Makefile.am
+--- multiwalk2c-0.2.1/Makefile.am	2005-07-17 23:59:14.000000000 +1100
++++ multiwalk2c-0.2.1-patched/Makefile.am	2014-03-19 21:50:26.801972477 +1100
 @@ -1,5 +1,5 @@
  AUTOMAKE_OPTIONS	=	foreign
 -INCLUDES 		= 	-Wall -Werror
@@ -7,3 +8,15 @@
  
  # ==========
  bin_PROGRAMS		= 	multiwalk2c
+diff -urN multiwalk2c-0.2.1/Makefile.in multiwalk2c-0.2.1-patched/Makefile.in
+--- multiwalk2c-0.2.1/Makefile.in	2008-03-07 06:03:44.000000000 +1000
++++ multiwalk2c-0.2.1-patched/Makefile.in	2014-03-19 21:50:35.784112648 +1100
+@@ -156,7 +156,7 @@
+ sysconfdir = @sysconfdir@
+ target_alias = @target_alias@
+ AUTOMAKE_OPTIONS = foreign
+-INCLUDES = -Wall -Werror
++INCLUDES = -Wall
+ multiwalk2c_SOURCES = multiwalk2c.c
+ multiwalk2c_LDFLAGS = -lnetsnmp -lpthread -lcrypto
+ all: config.h
