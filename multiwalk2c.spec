@@ -1,7 +1,7 @@
 Summary:	Multi-threaded SNMP scanner (like a snmpbulkwalk)
 Name:		multiwalk2c
 Version:	0.2.1
-Release:	6
+Release:	7
 License:	GPLv2+
 Group:		System/Servers
 Url:		http://wegorz.marton.pl/
