@@ -4,7 +4,7 @@ Version:	0.2.1
 Release:	7
 License:	GPLv2+
 Group:		System/Servers
-Url:		http://wegorz.marton.pl/
+Url:		https://wegorz.marton.pl/
 Source0:	http://wegorz.marton.pl/%{name}-%{version}.tar.gz
 Patch0:		multiwalk2c-0.1.1-compile_fix.diff
 BuildRequires:	net-snmp-devel
