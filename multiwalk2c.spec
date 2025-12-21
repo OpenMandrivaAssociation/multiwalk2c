@@ -7,6 +7,11 @@ Group:		System/Servers
 Url:		https://wegorz.marton.pl/
 Source0:	http://wegorz.marton.pl/%{name}-%{version}.tar.gz
 Patch0:		multiwalk2c-0.1.1-compile_fix.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	net-snmp-devel
 BuildRequires:	pkgconfig(libcrypto)
 
